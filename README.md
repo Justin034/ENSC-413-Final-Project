@@ -25,7 +25,7 @@ Used for determining the final output files and there differences between origin
 # Images and Outcomes
 Brief design structure of system\
 <img width="739" height="131" alt="Screenshot 2026-07-21 183520" src="https://github.com/user-attachments/assets/824537f1-2a65-4b27-9246-05a0178001c8" />
-<img width="621" height="331" alt="Screenshot 2026-07-21 183537" src="https://github.com/user-attachments/assets/c028baec-679e-4d45-bbe5-3080b82c7ffc" />
+<img width="621" height="331" alt="Screenshot 2026-07-21 183537" src="https://github.com/user-attachments/assets/c028baec-679e-4d45-bbe5-3080b82c7ffc" />\
 
 Outcomes from designs
 <img width="826" height="574" alt="Screenshot 2026-07-21 183625" src="https://github.com/user-attachments/assets/0c374638-bad5-4828-a72f-11b9ad973a6a" />
