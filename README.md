@@ -1,19 +1,31 @@
-# ENSC-413-Final-Project
-Create a live audio filter system using ML 
+# Real-Time-Audio-Mask
+A ML-based audio masking application that removes external noises
 
 # System Design
 
-## keyboard_detector_train.py
-This script builds and trains a convolutional neural network (CNN) to detect keyboard noise from spectrogram inputs.
+## data_augment.py
+As the majority of audio files available online either are only clean or noise files, the data augment file is used to add variations in the audio files. Examples include pitch shifts, time stretch etc.
 
-## noise_detection.py
-This script runs a live audio stream from your microphone, uses a trained model to detect keyboard typing sounds, and reduces the volume whenever those sounds are detected.
+## inference.py
+For testing in non-real time, the inference file is used to apply the masking effect of ML model to determine effectiveness
 
-## preprocess_dataset.py
-This script scans your dataset folders (train/val/test), converts all audio files into log-mel spectrograms, extracts labels, and saves them as .npy files for fast loading during model training.
+## metrics.py
+Used to determine the audio files final quality based on the following critera: SNR, STOI, PESQ
 
-## preprocess.py
-This script provides helper functions for loading audio files, converting them to log-mel spectrograms, normalizing and fixing their size, and extracting labels. It’s used to prepare individual audio files for training or inference.
+## model.py
+File includes the actual ML model used for the project. Design is roughly based on a U-Net structure but is compressed to accomadate a lower latency rate.
 
-## train.py
-This script loads preprocessed audio data, defines a convolutional neural network for keyboard-click detection, trains it, evaluates on a test set, and saves the final model. It also includes reproducibility, callbacks for early stopping, checkpointing, and learning-rate adjustment.
+## realtime.py
+File used for actually implementing the real-time portion of the project. Similar to the strucutre of the inference file but uses extra features like mic modules to allow for speech.
+
+## waveform.py
+Used for determining the final output files and there differences between original and cleaned.
+
+# Notes before proceeding
+PESQ python library was unable to be installed using pip, therefore, is not included in the requirements.txt\
+Python and Torch version used was the latest versions to accommadate school computers during training, etc.
+
+Folders are as follows:\
+test clean => Just speech, no noise\
+test input => speech + noise\
+test output -> denoised speech
