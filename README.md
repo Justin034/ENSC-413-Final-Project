@@ -1,5 +1,5 @@
 # Real-Time-Audio-Mask
-A ML-based audio masking application that removes external noises
+A ML-based audio masking application that removes external noises made with partner Mingyang Cheng
 
 # System Design
 
