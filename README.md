@@ -21,6 +21,15 @@ File used for actually implementing the real-time portion of the project. Simila
 ## waveform.py
 Used for determining the final output files and there differences between original and cleaned.
 
+# Images and Outcomes
+Brief design structure of system\
+![App Screenshot](Images/Screenshot 2026-07-21 183520.png)\
+![App Screenshot](Images/Screenshot 2026-07-21 183537.png)
+
+Outcomes from designs
+![App Screenshot](Images/Screenshot 2026-07-21 183625.png)\
+![App Screenshot](Images/Screenshot 2026-07-21 183633.png)
+
 # Notes before proceeding
 PESQ python library was unable to be installed using pip, therefore, is not included in the requirements.txt\
 Python and Torch version used was the latest versions to accommadate school computers during training, etc.
